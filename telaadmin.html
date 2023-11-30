@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegrafood</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/images/logotegrafood.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="botaomenu">
+            <img id="mostrarmenu" src="/assets/icons/menu.svg" alt="">
+        </div>
+        <div class="menusuperior">
+            <ul>
+                <a href="carrinho.html"><img src="/assets/icons/shopping_cart.svg" alt=""></a>
+                <img src="/assets/icons/notifications.svg" alt="">
+                <img class="avatar" src="/assets/images/produtos/pizzamargerita.png" alt="">
+            </ul>
+        </div>
+      </header>
+
+      <div id="menulateral" class="menulateral">
+        <div class="logo">
+            <img src="/assets/images/logotegrafood.png" alt="">
+        </div>
+         <div class="itens">
+            <ul>
+                <li class="selecionado">Todos</li>
+                <li class="">Pizza</li>
+                <li class="">Sobremesa</li>
+                <li class="">Pastel</li>
+                <li class="">Açaí</li>
+                <li class="">Bebidas</li>
+            </ul>
+        </div>
+      </div> 
+      
+      <div class="painelprodutos">
+        <div class="titleproduto">
+            <div class="titulo">
+            <h2 class="">Produtos</h2>
+            <h2 class="">Todos</h2>
+            </div>
+            <div class="botoes">
+                <img src="/assets/icons/sort_by_alpha.svg" alt="">
+                <a onclick="adicionarproduto()" class="botaoadicionar">Adicionar +</a>
+            </div>
+        </div>
+        <div id="admin" class="admin">
+            <div class="adicionarproduto">
+                    <h2 class="title">Novo item</h2>
+                <div class="inputs">
+                    <input class="nome" type="text" placeholder="Nome">
+                    <input class="categoria" type="text" placeholder="Categoria">
+                    <input class="descricao" type="text" placeholder="Descricao">
+                    <input class="valor" type="text" placeholder="Valor">
+                    <input class="imagem" type="text" placeholder="Adicione uma imagem">
+                </div>
+                <div class="botoes">
+                    <a onclick="fecharpainel()" class="botaocancelar">Cancelar</a>
+                    <a onclick="cadastrarproduto()" class="botaocadastrar">Cadastrar</a>
+                </div>
+            </div>
+          </div>
+        <div class="produtos">
+            <div class="produto">
+                    <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>
+            <div class="produto">
+                    <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>
+            <div class="produto">
+                    <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>
+            <div class="produto">
+                    <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>
+            <div class="produto">
+                    <img src="/assets/images/produtos/pizzamargerita.png" alt="">
+                <div class="informacoes">
+                    <h2 class="titulo">Pizza de Marguerita</h2>
+                    <p class="descricao">(Muçarela, tomate, manjericão, orégano)</p>
+                </div>
+                <div class="comprar">
+                    <h2 class="titulo">R$ 60,00</h2>
+                    <a class="botaocomprar">Editar</a>
+                </div>
+            </div>  
+        </div>
+      </div>
+    <div id="fundo" class="fundo"></div>
+    <div id="filtropreco" class="filtropreco">
+        <h2 class="title">Filtrar por preço:</h2>
+        <div class="itens">
+        <a onclick="sumirmenu()">R$5 à R$25</a>
+        <a onclick="sumirmenu()">R$26 à R$45</a>
+        <a onclick="sumirmenu()">R$46 ou mais</a>
+        </div>
+    </div>
+    <div id="alertfiltro" class="alertfiltro">
+        <p>Ítens organizados de A à Z</p><span> Cancelar</span>
+    </div>
+    <div id="alertcadastro" class="alertcadastro">
+        <p>Produto adicionado</p><a>Cancelar</a>
+   </div>
+    <script src="main.js"></script>
+</body>
+</html>

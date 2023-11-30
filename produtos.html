@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegrafood</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/images/logotegrafood.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="botaomenu">
+            <img id="mostrarmenu" src="/assets/icons/menu.svg" alt="">
+        </div>
+        <div class="menusuperior">
+            <ul>
+                <a href="carrinho.html"><img src="/assets/icons/shopping_cart.svg" alt=""></a>
+                <img src="/assets/icons/notifications.svg" alt="">
+                <img class="avatar" src="/assets/images/produtos/pizzademarguerita.png" alt="">
+            </ul>
+        </div>
+      </header>
+
+      <div id="menulateral" class="menulateral">
+        <div class="logo">
+            <img src="/assets/images/logotegrafood.png" alt="">
+        </div>
+         <div class="itens">
+            <ul>
+                <li onclick="filtrarProduto('Todos')" class="item-menu selecionado">Todos</li>
+                <li onclick="filtrarProduto('Pizza')" class="item-menu ">Pizza</li>
+                <li onclick="filtrarProduto('Sobremesa')" class="item-menu ">Sobremesa</li>
+                <li onclick="filtrarProduto('Pastel')" class="item-menu ">Pastel</li>
+                <li onclick="filtrarProduto('Açaí')" class="item-menu ">Açaí</li>
+                <li onclick="filtrarProduto('Bebidas')" class="item-menu ">Bebidas</p>
+            </ul>
+        </div>
+      </div> 
+    
+      <div class="painelprodutos">
+        <div class="titleproduto">
+            <div class="titulo">
+            <h2 class="">Produtos</h2>
+            <h2 onclick="filtrarProduto('Todos')" class="todos">Todos</h2>
+            </div>
+            <div class="botoes">
+                <img id="botaofiltro" src="/assets/icons/filter_alt.svg" alt="">
+                <img onclick="filtrarPrecoeAZ('AZ')" src="/assets/icons/sort_by_alpha.svg" alt="">
+            </div>
+        </div>
+        <div id="produtos" class="produtos"></div>
+        <div id="produtofiltro" class="produtos"></div>
+      </div>
+    <div id="fundo" class="fundo"></div>
+    <div id="filtropreco" class="filtropreco">
+        <h2 class="title">Filtrar por preço:</h2>
+        <div class="itens">
+        <a onclick="filtrarPrecoeAZ('5a25')">R$5 à R$25</a>
+        <a onclick="filtrarPrecoeAZ('26a45')">R$26 à R$45</a>
+        <a onclick="filtrarPrecoeAZ('46oumais')">R$46 ou mais</a>
+        </div>
+    </div>
+    <div id="alertfiltro" class="alertfiltro">
+        <p>Ítens organizados de A à Z</p><span> Cancelar</span>
+    </div>
+    <div id="alertcompra" class="alertcompra">
+         <p>Ítem adicionado ao carrinho</p><a href="carrinho.html">ir para o carrinho</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,586 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+/* VARIAVEIS */
+
+:root {
+    --cor-primaria: #6A0000;
+    --cor-secundaria: #DC9000;
+    --cor-produto: #223263;
+    --cor-botao: #DC9000;
+    --cor-botao-selecionado: #E5A11F;
+
+    --cor-texto: #000000;
+    --cor-descricao: #9098B1;
+    --cor-descricao2: #EBF0FF;
+    --cor-link: #40BFFF;
+}
+
+/* LOGIN */
+
+.display{
+    background: url(/assets/images/imagemfundo.png) no-repeat;
+    overflow: hidden;
+}
+
+.voltar {
+    cursor: pointer;
+    margin-left: 500px;
+    margin-top: 22px;
+}
+
+.login {        
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 111px 229px 112px 729px;
+}
+
+.login .input {
+    width: 343px;
+    height: 48px;
+    display: flex;
+
+}
+
+.login input {
+    font-weight: 400;
+    font-size: 12px;
+    height: 48px;
+    width: 343px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    width: 343px;
+    height: 57px;
+    padding: 16px;
+    background-color: var(--cor-botao);
+}
+
+.button:hover {
+    background-color: var(--cor-botao-selecionado);
+}
+
+.buttongoogle {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--cor-descricao);
+    display: flex;
+    align-items: center
+}
+
+.buttongoogle img {
+    margin: 10px;
+}
+.login h2 {
+    font-weight: 700;
+    color: var(--cor-produto);
+    font-size: 20px;
+}
+
+.login .subtitle {
+    margin: 28px;
+    font-weight: 400px;
+    color: var(--cor-descricao);
+    font-size: 12px;
+}
+
+.login .descricao {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-descricao);
+    margin: 28px;
+}
+
+.login .descricao2 {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--cor-descricao);
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login .descricao2 a {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--cor-link);
+}
+
+/* PRODUTOS */
+.menulateral {
+    background-color: var(--cor-primaria);
+    width: fit-content;
+    height: 100vw;
+}
+
+.menulateral img {
+    align-items: center;
+    height: 140px;
+    width: 170px;
+    margin: 42px 34.33px 34px 49.67px;
+}
+
+.menulateral ul li {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+ 
+    text-align: center;
+    width: 254px;
+    height: 45px;
+    border: 1px solid white;
+}
+
+.menulateral .selecionado {
+    background-color: var(--cor-botao);
+}
+
+.header {  
+    height: 80px;
+    width: 100%;
+    background-color: var(--cor-botao);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menusuperior img{
+    font-weight: 400;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    padding: 7px;
+    cursor: pointer;
+    
+}
+
+.titleproduto {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-produto);
+
+    margin-left: 300px;
+    margin-top: 20px;
+    
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.produtos {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    width: 1070px;
+    height: 128px;
+    justify-content: space-between;
+    margin-left: 250px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-descricao);
+}
+
+.produto .titulo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cor-produto);
+}
+
+.produto .descricao {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-descricao);
+}
+
+.produto .botaocomprar {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+
+    padding: 10px;
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    background-color: var(--cor-botao);
+}
+
+.produto .botaocomprar:hover {
+    background-color: var(--cor-botao-selecionado);
+}
+
+.produtos .informacoes {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: -430px;
+    align-items: left;
+    justify-content: left;
+}
+
+.produtos img {
+    display: flex;
+    width: 96.62px;
+    height: 100.79px;
+}
+
+.produtos .comprar {
+    display: grid;
+    text-align: center;
+    padding: 23px;
+    gap: 6px;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    visibility: hidden;
+    opacity: 0; 
+  
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+/* .alert.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+.alertcompra {
+    font-weight: 500;
+    font-size: 16px;
+
+    display: flex;
+    width: 574px;
+    height: 66px;
+    gap: 121px;
+    padding: 19px 16.74px 18.18px 15px;
+    background-color: var(--cor-produto);
+}
+
+.alertcompra p {
+    color: #FFFFFF;
+}
+
+.alertcompra a {
+    text-decoration: none;
+    color: var(--cor-botao);
+}
+ */
+
+
+.botoesadmin {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 22px;
+    margin-right: 18px;
+    margin-bottom: 2px;
+}
+
+.botaoadicionar {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    width: 148px;
+    height: 58px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: var(--cor-botao);
+}
+
+.adicionarproduto {
+    width: 815px;
+    height: 733px;
+    display: flex;
+z
+    background-color: var(--cor-primaria);
+}
+
+/* CARRINHO */
+.menucarrinho img{
+    justify-content: space-between;
+    font-weight: 400;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.titulocarrinho {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-produto);
+
+    margin-left: 79px;
+    margin-top: 85px;
+}
+
+.carrinhoprodutos {
+    margin-top: 27px;
+    margin-left: 37px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.carrinhoproduto {
+    width: 1126px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--cor-descricao);
+}
+
+.carrinhoproduto .titulo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cor-produto);
+}
+
+.carrinhoproduto .descricao {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-descricao);
+}
+
+.carrinhoproduto .botaocomprar {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+
+    padding: 10px;
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    background-color: var(--cor-botao);
+}
+
+.carrinhoprodutos .informacoes {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: -430px;
+    align-items: left;
+    justify-content: left;
+}
+
+.carrinhoprodutos img {
+    display: flex;
+    width: 96.62px;
+    height: 100.79px;
+}
+
+.carrinhoprodutos .comprar {
+    display: grid;
+    text-align: center;
+    padding: 23px;
+    gap: 6px;
+}
+
+.produtonocarrinho {
+    display: flex;
+}
+
+.produtonocarrinho .delete {
+    margin-top: 40.5px;
+    margin-left: 10px;
+    width: 79px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.quantidade {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+
+    padding: 10px;
+    border-radius: 5px;
+    width: 95px;
+    height: 57.83px;
+    background-color: var(--cor-botao);
+}
+
+.cupom {
+    width: 704px;
+    height: 128px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: 36px;
+    margin-top: 7px;
+    border: 1px solid var(--cor-descricao);
+}
+
+.cupom h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 46px 8px 46px 40px;
+}
+
+.cupom input {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--cor-texto);
+    text-align: center;
+    border: none;
+
+    width: 250px;
+    height: 54px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.adicionarcupom {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+    width: 140px;
+    height: 54px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--cor-botao);
+}
+
+.adicionarcupom:hover {
+    background-color: var(--cor-botao-selecionado);
+}
+
+.botoes {
+    margin: 39px 22px 35px 8px;
+}
+
+.finalizarcompra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoescompra {
+    width: 404px;
+    height: 162px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 180px;
+    margin-top: 7px;
+    padding: 18px 142px 18px 16px;
+    border: 1px solid var(--cor-descricao);
+}
+
+
+.informacoes p {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.valores {
+    margin-right: -130px;   
+}
+
+.valores p {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-produto);
+}
+
+.valores p a {
+    font-size: 15px;
+    color: var(--cor-texto);
+}
+
+.botoesfinalizar {
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    margin: 114px 116px 68px 799px ;
+}
+
+.botoesfinalizar .botaoescolher {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--cor-produto);
+    margin-top: 5px;
+}
+    
+.botoesfinalizar .botaofinalizarcompra a {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+
+
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--cor-botao);
+}
+
+.botoesfinalizar .botaofinalizarcompra a:hover {
+    background-color: var(--cor-botao-selecionado);
+}
+
+.botoesfinalizar .botaofinalizarcompra a img {
+    width: 20px;
+    height: 30px;
+}

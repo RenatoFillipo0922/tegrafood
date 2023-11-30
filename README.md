@@ -31,7 +31,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Tegrafood é um site de um restaurante.
-
-- [Visite o projeto online](https://RenatoFillipo0922.github.io/tegrafood)
-
- 
